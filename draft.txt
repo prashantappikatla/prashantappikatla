@@ -1,0 +1,53 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styles to the header */
+.horizontal-header {
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color for the header */
+    padding: 10px 0; /* Padding for the header */
+}
+
+/* Container for header content */
+.horizontal-header .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items evenly */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px; /* Maximum width for the header */
+    margin: 0 auto; /* Center the header */
+}
+
+/* Style for the logo or name */
+.horizontal-header .name {
+    font-size: 36px; /* Font size for the name */
+}
+
+/* Style for the navigation menu */
+
+.horizontal-header .menu ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    display: flex; /* Use flexbox for layout */
+}
+
+.horizontal-header .menu ul li {
+    margin-right: 20px; /* Spacing between menu items */
+}
+
+.horizontal-header .menu ul li:last-child {
+    margin-right: 0; /* Remove margin from the last menu item */
+}
+
+.horizontal-header .menu ul li a {
+    color: #fff; /* Text color for menu items */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for menu items */
+}
+
+/* Hover effect for menu items */
+.horizontal-header .menu ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+} 

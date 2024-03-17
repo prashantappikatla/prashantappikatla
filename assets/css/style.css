@@ -1,0 +1,101 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply basic styles to the header */
+.horizontal-header {
+    background-color: #EBE3D6; /* Background color for the header */
+    color: #505050; /* Text color for the header */
+    padding: 10px 0; /* Padding for the header */
+}
+
+/* Container for header content */
+.horizontal-header .container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px; /* Maximum width for the header */
+    margin: 0 auto; /* Center the header */
+}
+
+/* Style for the logo or name */
+.horizontal-header .name {
+    font-size: 24px; /* Font size for the name */
+    margin-bottom: 10px; /* Add spacing between name/logo and navbar */
+}
+
+.logo a {
+    text-decoration: none;
+    color: #F39361;
+}
+
+.separator {
+    width: 80%; /* 80% width of the container */
+    height: 3px; /* Increased thickness of the line */
+    background-color: #138808; /* Color of the line */
+    margin: 0 10%; /* 10% margin on each side */
+    margin-bottom: 10px; /* Add spacing between line and navbar */
+}
+
+/* Style for the navigation menu */
+
+.navbar {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #EBE3D6;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--jet);
+    border-radius: 12px 12px 0 0;
+    box-shadow: var(--shadow-2);
+    z-index: 5;
+}
+
+.navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #505050;
+    color: #808000;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 0 10px;
+    list-style-type: none;
+    width: 80%; /* Set navbar width to 80% of the container */
+    margin: 0 auto; /* Center the navbar horizontally */
+    border-top-left-radius: 15px; /* Keep top-left corner straight */
+    border-top-right-radius: 15px; /* Keep top-right corner straight */
+    border-bottom-left-radius: 15px; /* Round bottom-left corner */
+    border-bottom-right-radius: 15px; /* Round bottom-right corner */
+}
+
+.navbar-link {
+    width: 120px;
+    border: none;
+    border-radius: 15px;
+    background-color: #505050;
+    color: #F39361;
+    font-size: var(--fs-8);
+    padding: 20px 7px;
+    margin: 5px;
+  }
+
+.navbar-link:hover,
+.navbar-link:focus { 
+    color: var(--light-gray-70); }
+
+.navbar-link.active { 
+    color: var(--orange-yellow-crayola); }
+
+.main-content {
+    background-color: #EBE3D6;
+}
+
+.footer {
+    background-color: #EBE3D6;
+}
